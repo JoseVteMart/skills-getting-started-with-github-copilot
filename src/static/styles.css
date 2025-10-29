@@ -87,7 +87,7 @@ section h3 {
 }
 
 .activity-card .participants ul {
-  list-style-position: inside;
+  list-style: none;
   padding-left: 10px;
 }
 
@@ -95,6 +95,20 @@ section h3 {
   color: #666;
   font-size: 0.9em;
   margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.activity-card .participants .delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.activity-card .participants .delete-icon:hover {
+  opacity: 1;
 }
 
 .activity-card .participants p {
